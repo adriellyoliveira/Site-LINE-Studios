@@ -15,16 +15,23 @@
     --color2-: #ffffff;
     --color3-: #3498DB;
     --color4-: #E0E0E0;
-    --color5-:
-    --color6-:
+    --color5-: #2e2e2e;
+    --color6-: 
     --color7-:
     --color8-:
     --color9-:
     --color10-:
     --color11-:
-    --color12-:
+    --color12-: 
 }
 
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: var(--color1-);
+    color: var(--color2-);
+}
+
+/*Cabeçalho*/
 img {
     width: 100%;
     display: flex;
@@ -34,10 +41,9 @@ a {
     text-decoration: none;
 }
 
-body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-color: var(--color1-);
-    color: var(--color2-);
+header {
+    background-color: var(--color5-);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.329);
 }
 
 nav {
@@ -64,6 +70,7 @@ nav {
 .link a {
     position: relative;
     padding-bottom: 0.75rem;
+    margin-bottom: 10px;
     color: var(--color2-);
 }
 
@@ -79,15 +86,72 @@ nav {
 }
 
 .link a:hover::after {
-    width: 100%;
+    width: 80%;
+}
+
+li {
+    list-style: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--color5-);
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.link:hover .dropdown {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.dropdown a {
+    color: var(--color2-);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.btn {
+    padding: 12px 12px;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(--color2-);
+    background-color: var(--color3-);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var();
+}
+
+.button-container {
+    margin-right: 1rem;
 }
 
 
 
+/*Cabeçalho*/
 
 
 
-
+/*Carrossel*/
 .slider {
     margin: 0 auto;
     width: 800px;
@@ -97,7 +161,7 @@ nav {
 }
 
 .slides {
-    width: 400%;
+    width: 500%;
     height: 400px;
     display: flex;
 }
@@ -109,6 +173,7 @@ nav {
 .slide {
     width: 25%;
     position: relative;
+    transition: 2s;
 }
 
 .slide img{
@@ -190,3 +255,4 @@ nav {
 #radio4:checked ~ .navigation-auto .auto-btn4 {
     background-color: var(--color2-);
 }
+/*Carrossel*/
