@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
     <title>LINE Studios Login</title>
 </head>
 <body>
     
-    
+    <div class="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Criar Conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <span>Ou use seu email para registrar</span>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <button>Criar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Entrar</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <span>Ou use sua senha do email</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <a href="#">Esqueceu a Senha?</a>       
+                <button>Entrar</button>
+            </form>
+        </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="tpggle-panel toggle-left">
+                        <h1>Bem-Vindo(a) de Volta!</h1>
+                        <p>Faça login em sua conta para ficar atualizado sobre tudo relacionado aos seus artistas favoritos.</p>
+                        <button class="hidden" id="login">Entrar</button>
+                    </div>
+                    <div class="tpggle-panel toggle-left">
+                        <h1>E ai? Registre-se agora e faça parte!</h1>
+                        <p>Cadastre-se em nosso site e tenha notícias de seus artistas favoritos!</p>
+                        <button class="hidden" id="register">Criar Conta</button>
+                    </div>
+                </div>
+        </div>
+    </div>
 
 
         <script src="script.js"></script>
