@@ -20,7 +20,7 @@
             <ul class="nav-links">
                 <li class="link"><a href="#">Home</a></li>
                 <li class="link">
-                    <a href="#">Artistas</a>
+                    <a href="#" onclick="toggleArrow()">Artistas <span id="arrow">&#9662</span></a>
                     <ul class="dropdown">
                         <li><a href="#" class="bgroxo">D-ONE</a></li>
                         <li><a href="#" class="bgrosa">PINKPUNK</a></li>
@@ -28,12 +28,13 @@
                     </ul>
                 </li>
                 <li class="link"><a href="#">Loja</a></li>
+                <li class="link"><a href="#">Assinatura</a></li>
                 <li class="link"><a href="#">Sobre Nós</a></li>
                 <li class="link"><a href="#">Contato</a></li>
+                <li class="link"><a href="#"></a></li>
             </ul>
             <div class="button-container">
-                <button class="btn">Entrar</button>
-                <button class="btn">Conectar</button>
+                <a href="login.html" class="btn">Logar</a>
             </div>
         </nav>
     </header>
@@ -49,33 +50,66 @@
                     <input type="radio" name="radio-btn" id="radio3">
                     <input type="radio" name="radio-btn" id="radio4">
                     <div class="slide first">
-                        <img src="imagens/1.png" alt="Imagem1"/>
+                        <img src="imagens/d-oneslide.png" alt="Imagem1"/>
                     </div>
                     <div class="slide">
-                        <img src="imagens/2.png" alt="Imagem2"/>
+                        <img src="imagens/pinkpinkslide.png" alt="Imagem2"/>
                     </div>
                     <div class="slide">
-                        <img src="imagens/1.png" alt="Imagem3"/>
+                        <img src="imagens/diegoslide.png" alt="Imagem3"/>
                     </div>
                     <div class="slide">
-                        <img src="imagens/2.png" alt="Imagem4"/>
+                        <img src="imagens/lancamenslide.png" alt="Imagem4"/>
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/2.png" alt="Imagem5"/>
                     </div>
                     <div class="navigation-auto">
                         <div class="auto-btn1"></div>
                         <div class="auto-btn2"></div>
                         <div class="auto-btn3"></div>
                         <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
                     </div>
                     <div class="manual-navigation">
                         <label for="radio1" class="manual-btn"></label>
                         <label for="radio2" class="manual-btn"></label>
                         <label for="radio3" class="manual-btn"></label>
                         <label for="radio4" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
                     </div>
                 </div>
             </div> 
     </section>
     <!--Fim do Carrossel-->
+
+    <div class="conteiner">
+        <section class="article-section">
+            <article class="article-content">
+                <h2 class="article-title">"Unspoken Longings": O EP de Estreia de Diego</h2>
+                <p>Diego, o mais recente talento a se juntar à nossa gravadora, está prestes a lançar seu tão aguardado EP de estreia, intitulado "Unspoken Longings".</p>
+                    <p>Com uma abordagem musical sem rótulos, Diego traz uma mistura única de influências e experiências para sua música, criando um som que é ao mesmo tempo autêntico e cativante.</p>
+                <img src="imagens/fotodiego.png" alt="Diego" class="article-image">
+                <p>"Unspoken Longings" promete ser uma jornada emocionante através das experiências e reflexões de Diego, explorando temas universais de amor, perda e autodescoberta.
+                    <p>Prepare-se para se envolver com as letras profundas e as melodias envolventes de Diego, enquanto ele nos leva em uma viagem sonora que é ao mesmo tempo íntima e universal.</p>
+        
+        <p>Fique ligado para o lançamento de "Unspoken Longings" e descubra por que Diego está pronto para deixar uma marca indelével na cena musical.</p>
+                    <p>Para mais atualizações e conteúdo exclusivo, siga Diego nas redes sociais:</p>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Youtube</a>
+                <div class="sidebar">
+                    <div class="banner">
+                        <a href="#"><img src="imagens/bannerdiego.png" alt="Banner"></a>
+            
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

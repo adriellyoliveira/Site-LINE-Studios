@@ -12,11 +12,11 @@
 
 :root {
     --color1-: #333333;
-    --color2-: #ffffff;
-    --color3-: #3498DB;
+    --color2-: #2e2e2e;
+    --color3-: #FFFFFF;
     --color4-: #E0E0E0;
-    --color5-: #2e2e2e;
-    --color6-: 
+    --color5-: #6A0DAD;
+    --color6-: #5e0a99;
     --color7-:
     --color8-:
     --color9-:
@@ -28,7 +28,7 @@
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     background-color: var(--color1-);
-    color: var(--color2-);
+    color: var(--color3-);
 }
 
 /*Cabeçalho*/
@@ -42,7 +42,7 @@ a {
 }
 
 header {
-    background-color: var(--color5-);
+    background-color: var(--color2-);
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.329);
 }
 
@@ -71,7 +71,7 @@ nav {
     position: relative;
     padding-bottom: 0.75rem;
     margin-bottom: 10px;
-    color: var(--color2-);
+    color: var(--color3-);
 }
 
 .link a::after {
@@ -81,7 +81,7 @@ nav {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--color3-);
+    background-color: var(--color5-);
     transition: all 0.4s ease;
 }
 
@@ -96,7 +96,7 @@ li {
 .dropdown {
     display: none;
     position: absolute;
-    background-color: var(--color5-);
+    background-color: var(--color2-);
     min-width: 90px;
     box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
@@ -109,7 +109,7 @@ li {
 }
 
 .dropdown a {
-    color: var(--color2-);
+    color: var(--color3-);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -125,20 +125,26 @@ li {
     }
 }
 
+#arrow {
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+}
 
 .btn {
     padding: 12px 12px;
     margin-right: 10px;
     font-size: 1rem;
-    color: var(--color2-);
-    background-color: var(--color3-);
+    color: var(--color3-);
+    background-color: var(--color5-);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: var();
+    background-color: var(--color6-);
 }
 
 .button-container {
@@ -161,7 +167,7 @@ li {
 }
 
 .slides {
-    width: 500%;
+    width: 600%;
     height: 400px;
     display: flex;
 }
@@ -178,6 +184,7 @@ li {
 
 .slide img{
     width: 720px;
+    border-radius: 10px;
 }
 
 .manual-navigation {
@@ -201,7 +208,7 @@ li {
 }
 
 .manual-btn:hover {
-    background-color: var(--color2-);
+    background-color: var(--color4-);
 }
 
 #radio1:checked ~ .first {
@@ -241,18 +248,87 @@ li {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: var(--color2-);
+    background-color: var(--color4-);
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: var(--color2-);
+    background-color: var(--color4-);
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: var(--color2-);
+    background-color: var(--color4-);
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: var(--color2-);
+    background-color: var(--color4-);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn5 {
+    background-color: var(--color4-);
 }
 /*Carrossel*/
+
+/*Artigo*/
+
+.conteiner {
+    display: flex;
+    padding: 40px;
+}
+
+.article-section {
+    display: flex;
+    text-align: center;
+    padding: 50px 0; 
+}
+
+.article-content {
+    font-size: 18px;
+    line-height: 178%;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 30px 20px; 
+    text-align: left;
+}
+
+.article-content p {
+    text-align: justify;
+    padding: 15px;
+}
+
+.article-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.article-image {
+    display: block;
+    margin: 0 auto 20px; 
+    max-width: 100%; 
+    width: 300px;
+    height: auto; 
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--color4-); /* Usa a variável de cor definida anteriormente */
+    font-weight: bold;
+}
+
+.social-link:hover {
+    color: var(--color6-); /* Muda a cor ao passar o mouse para outra variável de cor */
+}
+
+
+
+
+
+
+
+/*Side Bar*/
+
+
+
+
