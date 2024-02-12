@@ -15,7 +15,9 @@ function nextImage(){
     document.getElementById("radio"+count).checked = true;
 
 }
-
+/**
+ * Carrossel
+ */
 
 
 
@@ -34,7 +36,24 @@ function toggleArrow() {
         arrow.innerHTML = "&#9652;"; // Define a seta para cima quando o menu está aberto
     }
 }
+/**
+ * Setinha do Artistas
+ */
 
 
 
 
+
+
+const container = document.getElementById('container');
+const loginBtn = document.getElementById('login');
+const registerBtn = document.getElementById('register');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
