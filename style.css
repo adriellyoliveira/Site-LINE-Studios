@@ -322,6 +322,12 @@ li {
 }
 
 
+.banner {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
 
 
 
