@@ -268,70 +268,43 @@ li {
 }
 /*Carrossel*/
 
-/*Artigo*/
-
-.conteiner {
+/* Container principal */
+.artigo {
     display: flex;
-    padding: 40px;
+    margin: 70px;
+    align-items: center;
+    padding: 4rem 1rem;
 }
 
-.article-section {
-    display: flex;
-    text-align: center;
-    padding: 50px 0; 
-}
-
-.article-content {
-    font-size: 18px;
-    line-height: 178%;
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 30px 20px; 
-    text-align: left;
-}
-
-.article-content p {
-    text-align: justify;
-    padding: 15px;
-}
-
-.article-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.article-image {
-    display: block;
-    margin: 0 auto 20px; 
-    max-width: 100%; 
-    width: 300px;
-    height: auto; 
-}
-
-.social-link {
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    color: var(--color4-); /* Usa a variável de cor definida anteriormente */
-    font-weight: bold;
-}
-
-.social-link:hover {
-    color: var(--color6-); /* Muda a cor ao passar o mouse para outra variável de cor */
-}
-
-
-.banner {
+/* Container do artigo */
+.artigo-conteudo {
     display: grid;
-    grid-template-columns: auto;
+    gap: 1.5rem;  /* Espaçamento entre os itens do grid */
+    max-width: 1000px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
+.artigo-conteudo p {
+    text-align: justify;
+    margin: 10px;
+}
 
+.artigo-conteudo img {
+    border-radius: 10px;
+}
 
+.imagem-artigo {
+    max-width: 600px;
+    justify-self: center;
+    align-self: center;
+}
 
-
-
+.button2-container {
+    text-align: center;
+    padding: 10px;
+}
 
 
 
