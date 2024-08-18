@@ -17,7 +17,7 @@
     --color4-: #E0E0E0;
     --color5-: #6A0DAD;
     --color6-: #5e0a99;
-    --color7-:
+    --color7-: #5f5f5f;
     --color8-:
     --color9-:
     --color10-:
@@ -402,7 +402,7 @@ button.next {
 }
 
 .parceiro {
-    background-color: #6A0DAD;
+    background-color: var(--color7-);
     width: 300px;
     height: 150px;
     display: flex;
