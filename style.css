@@ -268,49 +268,183 @@ li {
 }
 /*Carrossel*/
 
-/* Container principal */
+/* Container principal do artigo */
 .artigo {
-    display: flex;
-    margin: auto;
-    align-items: center;
-    padding: 4rem 1rem;
-    justify-content: center;
+    max-width: 800px; /* Define uma largura máxima */
+    width: 80%; /* Mantém a responsividade */
+    margin: 0 auto; /* Centraliza o artigo na página */
+    padding: 20px; /* Espaçamento interno */
 }
 
-/* Container do artigo */
+/* Conteúdo do artigo */
 .artigo-conteudo {
-    display: grid;
-    gap: 1.5rem;  /* Espaçamento entre os itens do grid */
-    max-width: 1000px;
-    width: 100%;
-    padding: 2rem;
-    border-radius: 10px;
+    padding: 10px 0; /* Reduz o espaçamento vertical */
 }
 
-.artigotitle {
+/* Título do artigo */
+.artigotitle h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.artigo-conteudo p {
-    text-align: justify;
-    margin: 10px;
+/* Texto do artigo */
+.texto-artigo {
+    margin-bottom: 15px; /* Espaçamento entre os blocos de texto */
+    line-height: 1.6;
 }
 
-.artigo-conteudo img {
-    border-radius: 10px;
-}
-
+/* Imagem do artigo */
 .imagem-artigo {
-    max-width: 600px;
-    justify-self: center;
-    align-self: center;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
 }
 
-.button2-container {
-    text-align: center;
-    padding: 10px;
+.imagem-artigo img {
+    max-width: 80%; /* Ajusta a imagem para ocupar 80% da largura do container */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 8px; /* Bordas arredondadas, se desejar */
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    .artigo {
+        width: 95%; /* Quase a largura total da tela em dispositivos móveis */
+        padding: 10px; /* Reduz o padding em telas pequenas */
+    }
+
+    .imagem-artigo img {
+        width: 100%; /* Imagens ocupam 100% da largura do container */
+    }
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.title-center {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 150px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: all .40s;
+}
+
+.carousel-item img:hover {
+    transform: scale(0.9);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+
+
+/* Seção de Nossos Parceiros */
+.nossos-parceiros {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.nossos-parceiros h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.parceiros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.parceiro {
+    background-color: #6A0DAD;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.parceiro img {
+    width: 40%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 50%; /* Faz a imagem ficar circular */
+}
+
+.parceiro p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .parceiro {
+        width: 120px; /* Ajuste o tamanho dos círculos para telas menores */
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .parceiro {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nossos-parceiros h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
 
 
 /*Footer começo*/
