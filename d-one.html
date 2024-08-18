@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a Banda</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="artista.css">
+</head>
+<body>
+    <!--Começo do Cabeçalho-->
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="imagens/logo_ls-removebgw-preview.png" alt="LINE Studios Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="link"><a href="#">Home</a></li>
+                <li class="link"><a href="#">Loja</a></li>
+                <li class="link"><a href="#">Assinatura</a></li>
+                <li class="link"><a href="#">Sobre Nós</a></li>
+                <li class="link"><a href="#">Contato</a></li>
+            </ul>
+            <div class="button-container">
+                <a href="login.html" target="_blank" class="btn"><i class="ri-user-3-fill"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!--Fim do Cabeçalho-->
+
+    <section class="carousel">
+        <h2>Eventos Recentes</h2>
+        <div class="carousel-wrapper">
+            <div class="carousel-slide">
+                <img src="imagens/d-oneinfo.png" alt="Evento 1">
+                <div class="carousel-caption">15/09 às 18:00 (BRT)</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="caminho/para/imagem-evento2.jpg" alt="Evento 2">
+                <div class="carousel-caption">Evento 2 - Descrição do Evento 2</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="caminho/para/imagem-evento3.jpg" alt="Evento 3">
+                <div class="carousel-caption">Evento 3 - Descrição do Evento 3</div>
+            </div>
+            <!-- Adicione mais slides conforme necessário -->
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+    
+
+    <section class="band-profile">
+        <div class="band-members">
+            <div class="member">
+                <img src="imagens/marleyid.png" alt="Marley">
+                <div class="member-info">
+                    <h2>Marley</h2>
+                    <p>Descrição detalhada sobre Marley. Fale sobre o papel dela na banda, suas contribuições e curiosidades.</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="imagens/jenid.png" alt="Jennifer">
+                <div class="member-info">
+                    <h2>Jennifer</h2>
+                    <p>Descrição detalhada sobre Jennifer. Fale sobre o papel dela na banda, suas contribuições e curiosidades.</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="imagens/mariid.png" alt="Mariana">
+                <div class="member-info">
+                    <h2>Mariana</h2>
+                    <p>Descrição detalhada sobre Mariana. Fale sobre o papel dela na banda, suas contribuições e curiosidades.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="band-media">
+            <h2>Discografia</h2>
+            <ul>
+                <li><a href="#">Álbum 1</a> - Ano</li>
+                <li><a href="#">Álbum 2</a> - Ano</li>
+                <li><a href="#">Álbum 3</a> - Ano</li>
+                <!-- Adicione mais álbuns conforme necessário -->
+            </ul>
+        </div>
+
+        <div class="band-gallery">
+            <h2>Galeria</h2>
+            <div class="gallery-grid">
+                <img src="caminho/para/imagem1.jpg" alt="Imagem 1">
+                <img src="caminho/para/imagem2.jpg" alt="Imagem 2">
+                <img src="caminho/para/imagem3.jpg" alt="Imagem 3">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="container-footer">
+        <div class="column">
+            <div class="logo">
+            <img src="imagens/logo_ls-removebgw-preview.png">
+        </div>
+            <p>
+                Nos siga nas redes sociais:
+            </p>
+            <div class="socials">
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-x-fill"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Empresa</h4>
+            <a href="#">Administração</a>
+            <a href="#">Parceiros</a>
+            <a href="#">Redes</a>
+        </div>
+        <div class="column">
+            <h4>Sobre Nós</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Canais</a>
+            <a href="#">Patrocinadores</a>
+        </div>
+        <div class="column">
+            <h4>Contato</h4>
+            <a href="#">Fale Conosco</a>
+            <a href="#">Política de Privicidade</a>
+            <a href="#">Termos e Condições</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2024 LINE Studios.
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carouselWrapper = document.querySelector('.carousel-wrapper');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            let currentIndex = 0;
+        
+            function showSlide(index) {
+                if (index >= slides.length) {
+                    currentIndex = 0;
+                } else if (index < 0) {
+                    currentIndex = slides.length - 1;
+                } else {
+                    currentIndex = index;
+                }
+                const offset = -currentIndex * 100;
+                carouselWrapper.style.transform = `translateX(${offset}%)`;
+            }
+        
+            prevButton.addEventListener('click', () => {
+                showSlide(currentIndex - 1);
+            });
+        
+            nextButton.addEventListener('click', () => {
+                showSlide(currentIndex + 1);
+            });
+        
+            // Opcional: Auto-slide a cada 5 segundos
+            setInterval(() => {
+                showSlide(currentIndex + 1);
+            }, 5000);
+        });
+        </script>
+        
+</body>
+</html>
