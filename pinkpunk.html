@@ -19,12 +19,12 @@
                 </a>
             </div>
             <ul class="nav-links">
-                <li class="link"><a href="index.html">Home</a></li>
-                <li class="link"><a href="loja.html">Loja</a></li>
-                <li class="link"><a href="assinatura.html">Assinatura</a></li>
+                <li class="link-pp"><a href="index.html">Home</a></li>
+                <li class="link-pp"><a href="loja.html">Loja</a></li>
+                <li class="link-pp"><a href="assinatura.html">Assinatura</a></li>
             </ul>
             <div class="button-container">
-                <a href="login.html" target="_blank" class="btn"><i class="ri-user-3-fill"></i></a>
+                <a href="login.html" target="_blank" class="btn-pp"><i class="ri-user-3-fill"></i></a>
             </div>
         </nav>
     </header>
@@ -47,40 +47,41 @@
             </div>
             <!-- Adicione mais slides conforme necessário -->
         </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
+        <button class="prev-pp">&#10094;</button>
+        <button class="next-pp">&#10095;</button>
     </section>
     
 
     <section class="band-profile">
         <div class="band-members">
             <div class="member">
-                <img src="imagens/marleyid.png" alt="Marley">
+                <img src="imagens/camzid.png" alt="Camila">
                 <div class="member-info">
-                    <h2>Marley</h2>
-                    <h4 class="member-position">Guitarrista e vocalista principal</h4>
-                    <p>Marley é a talentosa guitarrista e vocalista principal da banda. Desde pequena, Marley sempre esteve imersa no mundo artístico, o que moldou seu estilo único e expressivo de tocar e cantar. Com sua habilidade inata para liderar, Marley não só se destaca no palco, mas também é a fundadora da LINE Studios, um projeto que reflete sua paixão pela música e sua visão criativa. Conhecida por sua determinação e carisma, ela equilibra sua natureza introvertida com uma presença de palco poderosa, conquistando fãs com cada performance.</p>
+                    <h2>Camila</h2>
+                    <h4 class="member-position">Vocalista Principal</h4>
+                    <p>Camila é a vocalista principal do grupo, destacando-se por sua voz potente e presença de palco cativante. Desde cedo, Camila mostrou uma afinidade natural com a música, o que a levou a desenvolver seu talento e se tornar uma das artistas mais respeitadas do cenário atual. Sua habilidade de transmitir emoções profundas através de sua voz faz com que cada performance seja única e inesquecível. Além de seu papel como vocalista, Camila também desempenha um papel essencial na direção criativa do grupo, sempre buscando inovação e autenticidade em suas músicas.
+                    </p>
                 </div>
             </div>
             <div class="member">
-                <img src="imagens/jenid.png" alt="Jennifer">
+                <img src="imagens/babiid.png" alt="Bárbara">
                 <div class="member-info">
-                    <h2>Jennifer</h2>
-                    <h4 class="member-position">Baixista, tecladista principal e lead vocal</h4>
-                    <p>Jennifer é a multifacetada baixista, tecladista principal e lead vocal da banda. Seu talento para a música vai além de qualquer instrumento, sendo uma artista versátil e sensível que enriquece o som da banda com suas habilidades únicas. Com uma personalidade tranquila e sensata, Jennifer oferece um equilíbrio essencial para a dinâmica do grupo, tanto musicalmente quanto pessoalmente. Sua voz marcante e seu toque musical distinto fazem dela uma peça fundamental na identidade sonora da banda.</p>
+                    <h2>Bárbara</h2>
+                    <h4 class="member-position">Lead Vocal</h4>
+                    <p>Bárbara, conhecida por sua voz suave e emotiva, é uma das lead vocals do grupo. Com um timbre distinto e um estilo que combina sensibilidade com força, Bárbara consegue capturar a atenção do público a cada nota. Desde jovem, ela foi atraída pela música, explorando diversos estilos e desenvolvendo uma técnica vocal versátil. Seu talento e dedicação a tornaram uma das vozes mais queridas do grupo, e sua capacidade de se conectar com as letras dá às canções uma profundidade adicional.</p>
                 </div>
             </div>
             <div class="member">
-                <img src="imagens/mariid.png" alt="Mariana">
+                <img src="imagens/lariid.png" alt="Larissa">
                 <div class="member-info">
-                    <h2>Mariana</h2>
-                    <h4 class="member-position">Baterista principal e sub vocal</h4>
-                    <p>Mariana traz a batida forte e a energia vibrante como baterista principal da banda, além de ser a sub vocal que complementa as harmonias. Assim como Marley, Mariana cresceu em um ambiente artístico, desenvolvendo uma conexão profunda com a música desde cedo. Sua alegria contagiante e espírito aventureiro se refletem em suas performances, onde ela traz uma energia inigualável para o palco. Como amiga de longa data de Marley, sua sinergia com os outros membros da banda é evidente em cada apresentação.</p>
+                    <h2>Larissa</h2>
+                    <h4 class="member-position">Lead Vocal</h4>
+                    <p>Larissa é uma das lead vocals do grupo, conhecida por sua confiança e energia vibrante. Sua voz poderosa e presença marcante no palco a fazem se destacar em qualquer performance. Larissa sempre foi apaixonada pela música, e isso se reflete em seu comprometimento e vontade de sempre evoluir como artista. Sua capacidade de interpretar diferentes gêneros musicais e sua autoconfiança natural fazem dela um pilar do grupo, cativando o público com sua voz e carisma.</p>
                 </div>
             </div>
         </div>
 
-        <div class="band-media">
+        <div class="band-media-pp">
             <h2>Discografia</h2>
             <ul>
                 <li><a href="#">Álbum 1</a> - Ano</li>
@@ -148,8 +149,8 @@
         document.addEventListener('DOMContentLoaded', () => {
             const carouselWrapper = document.querySelector('.carousel-wrapper');
             const slides = document.querySelectorAll('.carousel-slide');
-            const prevButton = document.querySelector('.prev');
-            const nextButton = document.querySelector('.next');
+            const prevButton = document.querySelector('.prev-pp');
+            const nextButton = document.querySelector('.next-pp');
             let currentIndex = 0;
         
             function showSlide(index) {

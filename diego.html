@@ -19,12 +19,12 @@
                 </a>
             </div>
             <ul class="nav-links">
-                <li class="link"><a href="index.html">Home</a></li>
-                <li class="link"><a href="loja.html">Loja</a></li>
-                <li class="link"><a href="assinatura.html">Assinatura</a></li>
+                <li class="link-dg"><a href="index.html">Home</a></li>
+                <li class="link-dg"><a href="loja.html">Loja</a></li>
+                <li class="link-dg"><a href="assinatura.html">Assinatura</a></li>
             </ul>
             <div class="button-container">
-                <a href="login.html" target="_blank" class="btn"><i class="ri-user-3-fill"></i></a>
+                <a href="login.html" target="_blank" class="btn-dg"><i class="ri-user-3-fill"></i></a>
             </div>
         </nav>
     </header>
@@ -47,40 +47,25 @@
             </div>
             <!-- Adicione mais slides conforme necessário -->
         </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
+        <button class="prev-dg">&#10094;</button>
+        <button class="next-dg">&#10095;</button>
     </section>
     
 
     <section class="band-profile">
         <div class="band-members">
             <div class="member">
-                <img src="imagens/marleyid.png" alt="Marley">
+                <img src="imagens/diegoid.png" alt="Diego">
                 <div class="member-info">
-                    <h2>Marley</h2>
-                    <h4 class="member-position">Guitarrista e vocalista principal</h4>
-                    <p>Marley é a talentosa guitarrista e vocalista principal da banda. Desde pequena, Marley sempre esteve imersa no mundo artístico, o que moldou seu estilo único e expressivo de tocar e cantar. Com sua habilidade inata para liderar, Marley não só se destaca no palco, mas também é a fundadora da LINE Studios, um projeto que reflete sua paixão pela música e sua visão criativa. Conhecida por sua determinação e carisma, ela equilibra sua natureza introvertida com uma presença de palco poderosa, conquistando fãs com cada performance.</p>
-                </div>
-            </div>
-            <div class="member">
-                <img src="imagens/jenid.png" alt="Jennifer">
-                <div class="member-info">
-                    <h2>Jennifer</h2>
-                    <h4 class="member-position">Baixista, tecladista principal e lead vocal</h4>
-                    <p>Jennifer é a multifacetada baixista, tecladista principal e lead vocal da banda. Seu talento para a música vai além de qualquer instrumento, sendo uma artista versátil e sensível que enriquece o som da banda com suas habilidades únicas. Com uma personalidade tranquila e sensata, Jennifer oferece um equilíbrio essencial para a dinâmica do grupo, tanto musicalmente quanto pessoalmente. Sua voz marcante e seu toque musical distinto fazem dela uma peça fundamental na identidade sonora da banda.</p>
-                </div>
-            </div>
-            <div class="member">
-                <img src="imagens/mariid.png" alt="Mariana">
-                <div class="member-info">
-                    <h2>Mariana</h2>
-                    <h4 class="member-position">Baterista principal e sub vocal</h4>
-                    <p>Mariana traz a batida forte e a energia vibrante como baterista principal da banda, além de ser a sub vocal que complementa as harmonias. Assim como Marley, Mariana cresceu em um ambiente artístico, desenvolvendo uma conexão profunda com a música desde cedo. Sua alegria contagiante e espírito aventureiro se refletem em suas performances, onde ela traz uma energia inigualável para o palco. Como amiga de longa data de Marley, sua sinergia com os outros membros da banda é evidente em cada apresentação.</p>
+                    <h2>Diego</h2>
+                    <h4 class="member-position">Solista</h4>
+                    <p>Diego é um cantor solo versátil, conhecido por sua habilidade de explorar diversos gêneros musicais com autenticidade e paixão. Desde jovem, Diego foi atraído pelo poder da música, utilizando-a como uma forma de expressão e conexão com o mundo. Com uma voz marcante e uma presença de palco eletrizante, ele tem o dom de transformar cada apresentação em uma experiência memorável. Suas músicas abordam temas variados, desde o amor não correspondido até reflexões sobre a vida, sempre com letras profundas e batidas envolventes. Além de ser um talentoso cantor, Diego também é um visionário na produção de suas músicas, trazendo inovação e frescor para cada novo projeto. 
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="band-media">
+        <div class="band-media-dg">
             <h2>Discografia</h2>
             <ul>
                 <li><a href="#">Álbum 1</a> - Ano</li>
@@ -148,8 +133,8 @@
         document.addEventListener('DOMContentLoaded', () => {
             const carouselWrapper = document.querySelector('.carousel-wrapper');
             const slides = document.querySelectorAll('.carousel-slide');
-            const prevButton = document.querySelector('.prev');
-            const nextButton = document.querySelector('.next');
+            const prevButton = document.querySelector('.prev-dg');
+            const nextButton = document.querySelector('.next-dg');
             let currentIndex = 0;
         
             function showSlide(index) {
