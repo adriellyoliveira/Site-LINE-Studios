@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Share+Tech&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --cinza-terciario: #464646;
+    --botao-roxo: #6D28D9;
+    --botao-roxo2: #8E5DFF;
+    --botao-rosa: #d328d9;
+    --botao-rosa2: #f25dff;
+    --botao-verde: #28d94e;
+    --botao-verde2: #5dffa1;
+    --botao-vermelho: #d92831;
+    --botao-vermelho2: #ff5d6b;
+    --background: #00030C;
+    --roxo-card: #210055;
+    --roxo-card-efeito: #17073b;
+    --rosa-card: #550055;
+    --rosa-card-efeito: #3b073b;
+    --verde-card: #035500;
+    --verde-card-efeito: #073b12;
+    --vermelho-card: #55000b;
+    --vermelho-card-efeito: #3b070a;
+    --fonte-principal: "Inter";
+
+}
+
+body {
+    background-color: var(--background);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.principal {
+    background-image: url("imagens/d-onebackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.principal-pp {
+    background-image: url("imagens/backgroundpinkpunk.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.principal-dg {
+    background-image: url("imagens/backgrounddiego.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.principal-vn {
+    background-image: url("imagens/backgroundvini.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*D-ONE*/
+.container-botao {
+    background-color: var(--botao-roxo);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container-botao:hover {
+    background-color: var(--botao-roxo2);
+    color: var(--background);
+}
+/*D-ONE*/
+
+/*PINKPUNK*/
+.container-botao-pp {
+    background-color: var(--botao-rosa);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container-botao-pp:hover {
+    background-color: var(--botao-rosa2);
+    color: var(--background);
+}
+/*PINKPUNK*/
+
+/*DIEGO*/
+.container-botao-dg {
+    background-color: var(--botao-verde);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container-botao-dg:hover {
+    background-color: var(--botao-verde2);
+    color: var(--background);
+}
+/*DIEGO*/
+
+/*VINI*/
+.container-botao-vn {
+    background-color: var(--botao-vermelho);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container-botao-vn:hover {
+    background-color: var(--botao-vermelho2);
+    color: var(--background);
+}
+/*VINI*/
+
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container-aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container-titulo {
+    font-size: 28px;
+    font-weight: 700px;
+}
+
+.container-imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container-caixa {
+    margin: 0 6em;
+}
+
+.secundario-imagem {
+    width: 80%;
+}
+
+#correcao-imagem {
+    border-radius: 10px;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao-titulo {
+    font-weight: 700px;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao-texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario-botao {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.container-descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos-titulo{
+    font-size: 48px;
+}
+
+.dispositivos-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em  0;
+}
+
+.lista-item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape-logo {
+    height: 100px
+}
+
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em  0;
+}
+
+.rodape-lista a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    padding: 1.5em;
+}
+
+.rodape-texto {
+    margin: 1.5em;
+    color: var(--cinza-secundario);
+}
+
+.lista-link a:hover {
+    color: var(--botao-roxo);
+}
+
+.lista-link a:active {
+    color: var(--botao-roxo2);
+}
+
+.lista-link-pp a:hover {
+    color: var(--botao-rosa);
+}
+
+.lista-link-pp a:active {
+    color: var(--botao-rosa2);
+}
+
+.lista-link-dg a:hover {
+    color: var(--botao-verde);
+}
+
+.lista-link-dg a:active {
+    color: var(--botao-verde2);
+}
+
+.lista-link-vn a:hover {
+    color: var(--botao-vermelho);
+}
+
+.lista-link-vn a:active {
+    color: var(--botao-vermelho2);
+}
+
+
+
+
+.assinatura {
+    text-align: center;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--botao-roxo);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-pp {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--botao-rosa);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-dg {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--botao-verde);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-vn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--botao-verde);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+/*D-ONE*/
+.pricing {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card {
+    margin: 0 1em;
+    padding: 3rem 2rem;
+    background-color: var(--roxo-card);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+    background-color: var(--roxo-card-efeito);
+    border-color: #fff;
+}
+
+.pricing .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p {
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.card-aviso {
+    font-size: 12px;
+}
+
+.pricing .card button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid;
+}
+
+.pricing .card button:hover {
+    background-color: var(--botao-roxo);
+    border-color: var(--branco-principal);
+}
+/*D-ONE*/
+
+/*PINKPUNK*/
+.pricing-pp {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing-pp .card-pp {
+    margin: 0 1em;
+    padding: 3rem 2rem;
+    background-color: var(--rosa-card);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing-pp .card-pp:hover{
+    background-color: var(--rosa-card-efeito);
+    border-color: #fff;
+}
+
+.pricing-pp .card-pp .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing-pp .card-pp h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing-pp .card-pp h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing-pp .card-pp p {
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing-pp .card-pp p i {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.card-aviso {
+    font-size: 12px;
+}
+
+.pricing-pp .card-pp button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid;
+}
+
+.pricing-pp .card-pp button:hover {
+    background-color: var(--botao-rosa);
+    border-color: var(--branco-principal);
+}
+/*PINKPUNK*/
+
+/*DIEGO*/
+.pricing-dg {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing-dg .card-dg {
+    margin: 0 1em;
+    padding: 3rem 2rem;
+    background-color: var(--verde-card);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing-dg .card-dg:hover{
+    background-color: var(--verde-card-efeito);
+    border-color: #fff;
+}
+
+.pricing-dg .card-dg .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing-dg .card-dg h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing-dg .card-dg h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing-dg .card-dg p {
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing-dg .card-dg p i {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.card-aviso {
+    font-size: 12px;
+}
+
+.pricing-dg .card-dg button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid;
+}
+
+.pricing-dg .card-dg button:hover {
+    background-color: var(--botao-verde);
+    border-color: var(--branco-principal);
+}
+/*DIEGO*/
+
+/*PINKPUNK*/
+.pricing-vn {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing-vn .card-vn {
+    margin: 0 1em;
+    padding: 3rem 2rem;
+    background-color: var(--vermelho-card);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing-vn .card-vn:hover{
+    background-color: var(--vermelho-card-efeito);
+    border-color: #fff;
+}
+
+.pricing-vn .card-vn .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing-vn .card-vn h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing-vn .card-vn h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing-vn .card-vn p {
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing-vn .card-vn p i {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.card-aviso {
+    font-size: 12px;
+}
+
+.pricing-vn .card-vn button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid;
+}
+
+.pricing-vn .card-vn button:hover {
+    background-color: var(--botao-vermelho);
+    border-color: var(--branco-principal);
+}
+/*PINKPUNK*/
+
+
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .secundario {
+        margin: 0 5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-caixa {
+        margin: 0 2em;
+    }
+
+    .secundario {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 2em;
+    }
+
+    .secundario-imagem {
+        width: 100%;
+    }
+
+    .container-descricao {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    .secundario-botao {
+        width: 100%;
+        padding: 1em;
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-caixa {
+        margin: 0;
+    }
+
+    .principal {
+        padding: 1em;
+    }
+
+    .container-titulo {
+        font-size: 24px;
+    }
+
+    .secundario {
+        margin: 0;
+    }
+
+    .dispositivos-lista {
+        flex-direction: column;
+    }
+
+    .lista-item {
+        font-size: 18px;
+    }
+
+    .rodape-lista {
+        flex-direction: column;
+    }
+
+    .rodape-lista a {
+        padding: 0.5em;
+    }
+}
